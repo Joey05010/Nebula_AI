@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula AI - Intelligence Unleashed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-tech-mode">
+
+    <div id="background-effects">
+        <div class="particle-system"></div>
+        <div class="gradient-blob top-left"></div>
+        <div class="gradient-blob bottom-right"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 12L12 22L22 12L12 2Z" fill="url(#gradientPrimary)"/>
+                <path d="M12 5.5L5.5 12L12 18.5L18.5 12L12 5.5Z" fill="url(#gradientSecondary)"/>
+                <defs>
+                    <linearGradient id="gradientPrimary" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#8A2BE2"/>
+                        <stop offset="1" stop-color="#4B0082"/>
+                    </linearGradient>
+                    <linearGradient id="gradientSecondary" x1="5.5" y1="12" x2="18.5" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00FFFF"/>
+                        <stop offset="1" stop-color="#0000FF"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            Nebula AI
+        </div>
+        <nav class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact-form" class="cta-button">Contact Us</a> 
+        </nav>
+        <div class="mobile-menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="AI-Powered Intelligence Unleashed.">AI-Powered Intelligence Unleashed.</h1>
+                <p>Transform raw data into strategic advantage with our cutting-edge platform. Zero latency, maximum impact.</p>
+                <div class="cta-group">
+                    <a href="#contact-form" class="cta-primary">Request a Demo <span class="arrow-icon">→</span></a>
+                    <a href="#features" class="cta-secondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                    <defs>
+                        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" stop-color="#00FFFF" />
+                            <stop offset="100%" stop-color="#8A2BE2" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="250" cy="250" r="200" fill="url(#grad1)" opacity="0.1"/>
+                    <path id="path1" d="M150 250 A100 100 0 1 1 350 250 A100 100 0 1 1 150 250Z" fill="none" stroke="url(#grad1)" stroke-width="2" stroke-dasharray="10 5"/>
+                    <circle cx="250" cy="250" r="10" fill="url(#grad1)">
+                        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                            <mpath href="#path1" />
+                        </animateMotion>
+                    </circle>
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#FFFFFF" font-size="20" font-family="Space Grotesk">DATA FLOW</text>
+                </svg>
+            </div>
+        </section>
+
+        <section id="features" class="feature-section">
+            <h2 class="section-title">Core Intelligence. Endless Possibilities.</h2>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <div class="icon-placeholder"><svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="url(#featureGrad)"/></svg></div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Anticipate market shifts with **unparalleled accuracy** and actionable forecasts.</p>
+                    <a href="#" class="learn-more">Details <span class="arrow-icon">→</span></a>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon-placeholder"><svg class="feature-icon" viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2zm-4 4H9v-2h6v2zm6-10H3v-2h18v2z" fill="url(#featureGrad)"/></svg></div>
+                    <h3>Automated Reporting</h3>
+                    <p>Generate comprehensive, on-demand reports instantly, saving valuable time.</p>
+                    <a href="#" class="learn-more">Details <span class="arrow-icon">→</span></a>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon-placeholder"><svg class="feature-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="url(#featureGrad)"/></svg></div>
+                    <h3>Real-time Processing</h3>
+                    <p>Experience **zero latency** with immediate data ingestion and critical analysis.</p>
+                    <a href="#" class="learn-more">Details <span class="arrow-icon">→</span></a>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon-placeholder"><svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z" fill="url(#featureGrad)"/></svg></div>
+                    <h3>Secure & Scalable</h3>
+                    <p>**Enterprise-grade security** and elastic scalability for global demands.</p>
+                    <a href="#" class="learn-more">Details <span class="arrow-icon">→</span></a>
+                </div>
+                <defs>
+                    <linearGradient id="featureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00FFFF"/>
+                        <stop offset="100%" stop-color="#8A2BE2"/>
+                    </linearGradient>
+                </defs>
+            </div>
+        </section>
+
+        <section id="solutions" class="solution-section">
+            <h2 class="section-title">Tailored Intelligence for Every Sector.</h2>
+            <div class="solution-grid">
+                <div class="solution-item reveal">
+                    <div class="solution-icon">
+                        <img src="assets/Case.svg" alt="Finance Icon" class="solution-svg-icon">
+                    </div>
+                    <h3>Finance</h3>
+                    <p>Risk assessment, fraud detection, and market prediction.</p>
+                </div>
+                <div class="solution-item reveal">
+                    <div class="solution-icon">
+                        <img src="assets/Cart.svg" alt="E-commerce Icon" class="solution-svg-icon">
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Personalized recommendations and inventory optimization.</p>
+                </div>
+                <div class="solution-item reveal">
+                    <div class="solution-icon">
+                        <img src="assets/Hospital.svg" alt="Healthcare Icon" class="solution-svg-icon">
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>Patient outcome prediction and operational efficiency.</p>
+                </div>
+                <div class="solution-item reveal">
+                    <div class="solution-icon">
+                        <img src="assets/Factory.svg" alt="Manufacturing Icon" class="solution-svg-icon">
+                    </div>
+                    <h3>Manufacturing</h3>
+                    <p>Predictive maintenance and supply chain optimization.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonial-section">
+            <h2 class="section-title">What Our Pioneers Are Saying.</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-card reveal">
+                    <p class="quote">"Nebula AI transformed our data strategy. The insights are truly revolutionary."</p>
+                    <p class="author">- Dr. Anya Sharma, CTO at Quantum Dynamics</p>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="quote">"Integrating Nebula AI was seamless. Our efficiency metrics skyrocketed within weeks."</p>
+                    <p class="author">- Mark Chen, Lead Data Scientist at OmniCorp</p>
+                </div>
+                <div class="testimonial-card reveal">
+                    <p class="quote">"The predictive capabilities are unmatched. A game-changer for our market analysis."</p>
+                    <p class="author">- Elena Petrova, Head of Innovation at Veridian Solutions</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">Flexible Plans. Powerful Intelligence.</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Starter</h3>
+                    <p class="price">$49<span>/month</span></p>
+                    <ul>
+                        <li><span class="check-icon">✓</span> Basic AI Models</li>
+                        <li><span class="check-icon">✓</span> 10 GB Storage</li>
+                        <li><span class="check-icon">✓</span> Standard Analytics</li>
+                        <li><span class="check-icon">✓</span> Email Support</li>
+                    </ul>
+                    <a href="#" class="cta-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card featured-card reveal">
+                    <span class="badge">Most Popular</span>
+                    <h3>Pro</h3>
+                    <p class="price">$199<span>/month</span></p>
+                    <ul>
+                        <li><span class="check-icon">✓</span> Advanced AI Models</li>
+                        <li><span class="check-icon">✓</span> 100 GB Storage</li>
+                        <li><span class="check-icon">✓</span> Custom Dashboards</li>
+                        <li><span class="check-icon">✓</span> Priority Support</li>
+                    </ul>
+                    <a href="#" class="cta-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card reveal">
+                    <h3>Enterprise</h3>
+                    <p class="price">Custom</p>
+                    <ul>
+                        <li><span class="check-icon">✓</span> Bespoke AI Solutions</li>
+                        <li><span class="check-icon">✓</span> Unlimited Storage</li>
+                        <li><span class="check-icon">✓</span> Dedicated Manager</li>
+                        <li><span class="check-icon">✓</span> 24/7 Premium Support</li>
+                    </ul>
+                    <a href="#" class="cta-primary">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact-form" class="contact-section">
+            <h2 class="section-title glitch" data-text="Get In Touch.">Get In Touch.</h2>
+            <p>Ready to integrate Nebula AI? Send us a message and a specialist will be in touch shortly.</p>
+            <div class="contact-container reveal">
+                <form action="https://formsubmit.co/andzijoey05@gmail.com" method="POST" class="contact-form">
+                    <input type="hidden" name="_subject" value="New Nebula AI Contact Inquiry">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Your Message / Inquiry Details</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-primary full-width">Send Message <span class="arrow-icon">→</span></button>
+                </form>
+            </div>
+        </section>
+        <section id="cta-final" class="cta-final-section">
+            <h2 class="section-title glitch" data-text="Ready to Redefine Your Data?">Ready to Redefine Your Data?</h2>
+            <p>Join the future of intelligent decision-making. Experience Nebula AI today.</p>
+            <a href="#contact-form" class="cta-primary huge-cta">Start Your Free Trial <span class="arrow-icon">→</span></a>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">Nebula AI</div>
+                <p>Intelligence Unleashed.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Platform</h3>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Connect</h3>
+                <p>Email: <a href="mailto:info@nebulaai.com">info@nebulaai.com</a></p>
+                <p>Phone: +1 (555) AI-NEBULA</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73c-1.11 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm13.5 12.27h-3v-5.61c0-3.37-4-3.13-4 0v5.61H8V8h3v1.76c1.39-2.58 7-2.78 7 2.47V19z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.14 17.18 3.5 15.86 3.5c-2.4 0-4.35 1.95-4.35 4.35 0 .34.04.67.11.99C7.17 9.5 4.1 7.82 2.06 5.25c-.37.64-.58 1.39-.58 2.2 0 1.51.77 2.85 1.94 3.64-.7-.02-1.37-.21-1.95-.5v.06c0 2.1 1.49 3.85 3.47 4.25-.36.1-.73.15-1.11.15-.27 0-.53-.02-.79-.08.55 1.72 2.14 2.97 4.02 3.01-1.48 1.16-3.35 1.85-5.38 1.85-.35 0-.69-.02-1.03-.06C3.17 20.35 5.3 21 7.49 21c8.98 0 13.92-7.43 13.92-13.92 0-.21 0-.42-.01-.63.96-.69 1.79-1.57 2.45-2.56z"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nebula AI. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
