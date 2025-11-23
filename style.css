@@ -209,6 +209,9 @@ section {
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    /* FIX: Prevents elements within the hero from forcing horizontal scroll */
+    max-width: 100%; 
+    overflow: hidden; 
 }
 .hero-content {
     max-width: 50%;
@@ -230,6 +233,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Ensure children are contained relative to this box */
+    /* Add a small right margin on larger screens to prevent bleed */
+    margin-right: -20px; 
 }
 .hero-svg {
     width: 100%;
@@ -589,8 +595,13 @@ footer {
         transform: translateY(-5px) scale(1.02);
     }
     .solution-grid {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+    grid-template-columns: 1fr; /* Change to a single column */
+    gap: 20px;
+}
+    .solution-item {
+    max-width: 90%; 
+    margin: 0 auto;
+}
     .contact-container {
         padding: 20px;
     }
@@ -622,4 +633,5 @@ footer {
     .pricing-card {
         max-width: 90%;
     }
+
 }
